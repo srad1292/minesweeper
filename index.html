@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="board">
+
+        </div>
+    </div>
+    <div id="info">
+        <p id="flag-count">Mines: ?</p>
+        <!-- <p id="timer">Time: 0</p> -->
+        <div id="difficulty-selection">
+            <label for="difficulty">Difficulty: </label>
+            <select name="difficulty" id="difficulty" onchange="changeDifficulty()">
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="expert">Expert</option>
+            </select>
+        </div>
+        <button id="restart-button" onclick="restart()">Restart</button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
